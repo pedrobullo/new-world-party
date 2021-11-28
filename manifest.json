@@ -1,0 +1,125 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Sample App",
+    "author": "Overwolf",
+    "version": "3.0.3",
+    "minimum-overwolf-version": "0.169.0",
+    "description": "New World Party",
+    "dock_button_title": "New World Party",
+    "icon": "icons/iconMouseOver.png",
+    "icon_gray": "icons/iconMouseNormal.png",
+    "launcher_icon": "icons/desktopIcon.ico",
+    "window_icon": "icons/taskbarIcon.png"
+  },
+  "permissions": ["Hotkeys", "GameInfo", "Media", "FileSystem", "DesktopStreaming", "Clipboard"],
+  "data": {
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "background.html",
+        "debug_url": "http://localhost:3000/background.html",
+        "is_background_page": true,
+        "allow_local_file_access": true
+      },
+      "minimap": {
+        "file": "minimap.html",
+        "debug_url": "http://localhost:3000/minimap.html",
+        "dev_tools_window_style": true,
+        "desktop_only": false,
+        "in_game_only": true,
+        "resizable": true,
+        "clickthrough": false,
+        "transparent": true,
+        "override_on_update": false,
+        "size": {
+          "width": 320,
+          "height": 700
+        },
+        "start_position": {
+          "top": 50,
+          "left": 50
+        },
+        "allow_local_file_access": true,
+        "popup_blocker": true,
+        "mute": false,
+        "keep_window_location": true
+      },
+      "events": {
+        "file": "events.html",
+        "debug_url": "http://localhost:3000/events.html",
+        "dev_tools_window_style": true,
+        "desktop_only": false,
+        "in_game_only": true,
+        "resizable": false,
+        "clickthrough": false,
+        "transparent": true,
+        "override_on_update": false,
+        "size": {
+          "width": 320,
+          "height": 700
+        },
+        "start_position": {
+          "top": 50,
+          "left": 50
+        },
+        "allow_local_file_access": true,
+        "popup_blocker": true,
+        "mute": false,
+        "keep_window_location": true
+      }
+    },
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [21816]
+    },
+    "game_events": [21816],
+    "launch_events": [{
+      "event": "GameLaunch",
+      "event_data": {
+        "game_ids": [21816]
+      },
+      "start_minimized": false
+    }],
+    "hotkeys": {
+      "show_hide_minimap": {
+        "title": "Show/Hide Minimap",
+        "action-type": "custom",
+        "default": "Alt+M"
+      },
+      "zoom_in_minimap": {
+        "title": "Zoom In Minimap",
+        "action-type": "custom",
+        "default": ">"
+      },
+      "zoom_out_minimap": {
+        "title": "Zoom Out Minimap",
+        "action-type": "custom",
+        "default": "<"
+      },
+      "ping_assist": {
+        "title": "Self Ping: Assist",
+        "action-type": "custom",
+        "default": "F1"
+      },
+      "ping_warning": {
+        "title": "Self Ping: Warning",
+        "action-type": "custom",
+        "default": "F2"
+      }
+    },
+    "protocol_override_domains": {
+      "googlesyndication": "http"
+    },
+    "externally_connectable": {
+      "matches": ["http://localhost:6006", "http://localhost:3000"]
+    },
+    "force_browser": "user",
+    "developer": {
+      "enable_auto_refresh": true,
+      "reload_delay": 1000,
+      "filter": "*.*"
+    }
+  }
+}
