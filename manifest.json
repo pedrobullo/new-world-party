@@ -19,13 +19,11 @@
     "windows": {
       "background": {
         "file": "background.html",
-        "debug_url": "http://localhost:3000/background.html",
         "is_background_page": true,
         "allow_local_file_access": true
       },
       "minimap": {
         "file": "minimap.html",
-        "debug_url": "http://localhost:3000/minimap.html",
         "dev_tools_window_style": true,
         "desktop_only": false,
         "in_game_only": true,
@@ -48,7 +46,6 @@
       },
       "events": {
         "file": "events.html",
-        "debug_url": "http://localhost:3000/events.html",
         "dev_tools_window_style": true,
         "desktop_only": false,
         "in_game_only": true,
