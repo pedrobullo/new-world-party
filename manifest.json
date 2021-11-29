@@ -13,7 +13,14 @@
     "launcher_icon": "icons/desktopIcon.ico",
     "window_icon": "icons/taskbarIcon.png"
   },
-  "permissions": ["Hotkeys", "GameInfo", "Media", "FileSystem", "DesktopStreaming", "Clipboard"],
+  "permissions": [
+    "Hotkeys",
+    "GameInfo",
+    "Media",
+    "FileSystem",
+    "DesktopStreaming",
+    "Clipboard"
+  ],
   "data": {
     "start_window": "background",
     "windows": {
@@ -72,13 +79,15 @@
       "game_ids": [21816]
     },
     "game_events": [21816],
-    "launch_events": [{
-      "event": "GameLaunch",
-      "event_data": {
-        "game_ids": [21816]
-      },
-      "start_minimized": false
-    }],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [21816]
+        },
+        "start_minimized": false
+      }
+    ],
     "hotkeys": {
       "show_hide_minimap": {
         "title": "Show/Hide Minimap",
@@ -110,7 +119,12 @@
       "googlesyndication": "http"
     },
     "externally_connectable": {
-      "matches": ["http://localhost:6006", "http://localhost:3000"]
+      "matches": [
+        "http://localhost:6006",
+        "http://localhost:3000",
+        "http://64.227.1.216:3001",
+        "ws://64.227.1.216"
+      ]
     },
     "force_browser": "user",
     "developer": {
