@@ -19,11 +19,13 @@
     "windows": {
       "background": {
         "file": "background.html",
+        "debug_url": "http://64.227.97.79:3000/background.html",
         "is_background_page": true,
         "allow_local_file_access": true
       },
       "minimap": {
         "file": "minimap.html",
+        "debug_url": "http://64.227.97.79:3000/minimap.html",
         "dev_tools_window_style": true,
         "desktop_only": false,
         "in_game_only": true,
@@ -46,6 +48,7 @@
       },
       "events": {
         "file": "events.html",
+        "debug_url": "http://64.227.97.79:3000/events.html",
         "dev_tools_window_style": true,
         "desktop_only": false,
         "in_game_only": true,
@@ -110,7 +113,7 @@
       "googlesyndication": "http"
     },
     "externally_connectable": {
-      "matches": ["http://localhost:6006", "http://localhost:3000", "http://64.227.1.216:3001", "ws://64.227.1.216"]
+      "matches": ["http://64.227.97.79:6006", "http://64.227.97.79:3000", "http://64.227.97.79:3001", "ws://64.227.97.79"]
     },
     "force_browser": "user",
     "developer": {
